@@ -1,30 +1,67 @@
-# 🔧 Robotic Arc Welding with ABB KR6 in MuJoCo
+# 🤖 Automated Robotic Arm Welding – Group 13
 
-This repository contains a complete simulation and control framework for **robotic arc welding** using an **ABB KR6 industrial manipulator**, implemented in the **MuJoCo physics engine**. The goal of this project is to simulate the robotic welding process—including precise toolpath tracking, welding torch dynamics, and control logic—prior to real-world deployment, improving safety, accuracy, and process development time.
+Welcome to the official repository for our ME3302 course project: **Automated Robotic Arm Welding** using the **KUKA KR6 R1840-2 robot** in a **MuJoCo-based simulation environment**. This project demonstrates the complete automation of arc welding using digital twins, trajectory control, and impedance-based dynamics simulation.
 
----
-
-## 📖 Project Overview
-
-Robotic arc welding is one of the most demanding applications in industrial automation due to the precision, coordination, and path fidelity required. In this project, the **ABB KR6 R900 sixx** robot model is recreated in MuJoCo using accurate CAD and kinematic data, and controlled via Python scripts to follow realistic welding paths. The simulation framework can be used for:
-
-- Path planning and evaluation
-- Kinematic and dynamic analysis
-- Torch orientation control
-- Weld seam tracking
-- Sensor-based feedback control (future)
-- Offline programming validation
+> 🔗 [Live Repository](https://github.com/YogeshRajasekhar/AutoMan_Welding_Robotic_Arm.git)
 
 ---
 
-## 🔍 Key Features
+## 📌 Overview
 
-- ✅ MuJoCo XML model of ABB KR6 with accurate DH parameters and joint limits
-- ✅ Simulated torch tip tracking along weld seams
-- ✅ Visualization tools for toolpaths and robot postures
-- ✅ Modular CAD-to-MuJoCo model integration
-- ✅ Forward and inverse kinematics utilities
-- 🧪 Support for planned force or impedance control
-- 📦 Easily extendable to other industrial tasks (grinding, painting, inspection)
+Robotic arc welding is rapidly replacing manual welding in modern manufacturing due to its speed, precision, and safety. In this project, we simulate a robotic welding process that:
+
+- Follows weld paths derived from CAD
+- Applies inverse kinematics for pose tracking
+- Implements impedance-based dynamic control
+- Simulates using MuJoCo for real-time performance
 
 ---
+
+## 👨‍🔧 Team Members (Group 13)
+
+- ME22B163 NANDHINI  
+- ME22B171 NIRMAL KUMARAN M  
+- ME22B178 PRANAB T  
+- ME22B187 ROHAN B  
+- ME22B215 YOGESH G R
+
+Department of Mechanical Engineering, IIT Madras  
+Semester: Jan–May 2025
+
+---
+
+## 🧠 Key Features
+
+- ✅ **CAD-based weld path extraction**
+- ✅ **6-DOF KUKA KR6 robot model**
+- ✅ **Inverse kinematics and Jacobian control**
+- ✅ **Simulation using MuJoCo engine**
+- ✅ **Impedance controller for dynamic interactions**
+- ✅ **Economic analysis and ROI estimation**
+
+---
+
+## 🧰 Technologies Used
+
+- 🟠 [MuJoCo](https://mujoco.org/) for physics simulation  
+- 🐍 Python 3.8+ for scripting and control  
+- 📐 NumPy, SciPy for matrix math and kinematics  
+- 📄 STL/OBJ/URDF for geometry import  
+- 🧮 Custom-built impedance and position controllers  
+
+---
+
+## 🔩 Robot Specifications: KUKA KR6 R1840-2
+
+| Parameter         | Value          |
+|------------------|----------------|
+| Axes             | 6              |
+| Max Reach        | 1840 mm        |
+| Payload          | 6 kg           |
+| Pose Repeatability | ±0.04 mm    |
+| Weight           | 162 kg         |
+
+---
+
+## 🛠️ Project Architecture
+
