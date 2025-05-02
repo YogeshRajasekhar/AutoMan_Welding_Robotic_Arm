@@ -28,6 +28,3 @@ Robotic arc welding is one of the most demanding applications in industrial auto
 - 📦 Easily extendable to other industrial tasks (grinding, painting, inspection)
 
 ---
-
-## 🗂️ Repository Structure
-
