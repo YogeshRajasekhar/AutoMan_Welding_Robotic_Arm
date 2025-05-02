@@ -1,0 +1,91 @@
+
+---
+
+## 🚀 Execution Workflow
+
+1. 📐 **Import weld path from CAD**
+2. 🔧 **Path smoothing and preprocessing**
+3. 🎯 **Calculate start/end poses (Task space)**
+4. 🔁 **Apply inverse kinematics → joint angles**
+5. 🚗 **Waypoint interpolation**
+6. 🤖 **End-effector position control**
+7. ⚙️ **Impedance dynamics for realism**
+
+---
+
+## 📊 Economic Comparison
+
+| Parameter               | Manual Welding | Robotic Welding |
+|------------------------|----------------|-----------------|
+| Initial Investment     | $5,000         | $120,000        |
+| Annual Labor           | $100,000       | $0              |
+| 5-Year Cost            | $535,000       | $170,000        |
+| Defect Rate            | 15%            | 3%              |
+| Productivity           | 50%            | 95%             |
+| Payback Period         | –              | ~1.3 years      |
+| ROI                    | –              | 75%/year        |
+
+> Source: Qviro Blog 2024, Minoo Welding Systems 2023, CalPoly 2015
+
+---
+
+## 📈 Control Methodology
+
+### 🔁 Kinematics
+
+- **Forward**: \( \Delta X = J(q) \cdot \Delta \theta \)  
+- **Inverse**: \( \Delta \theta = J^{-1}(q) \cdot \Delta X \)
+
+### 📌 Position Control
+
+\[
+X_{t+1} = X_d + K_p X_e + K_d \dot{X}_e + K_i \int X_e dt
+\]
+
+### 🛡️ Impedance Dynamics
+
+\[
+F = M(ẍ_d - ẍ) + D(ẋ_d - ẋ) + K(x_d - x)
+\]
+
+---
+
+## 📺 Simulation Snapshot
+
+![MuJoCo Welding](media/mujoco_simulation.png)
+
+---
+
+## 🔮 Future Enhancements
+
+- Reinforcement Learning for adaptive control
+- Vision system for weld quality analysis
+- Generalized control framework for robots with varying DOF
+- Dual-arm collaborative welding setup
+
+---
+
+## 📚 References
+
+1. [IJCRT 2022 – Robotic Welding Technology](https://ijcrt.org/papers/IJCRT2208578.pdf)  
+2. [Springer – Robotic Welding, Intelligence and Automation](https://link.springer.com/book/10.1007/978-3-540-36503-7)  
+3. [Force Design – Planning Robotic Welding Systems](https://forcedesign.biz/ebook/robotic-welding-systemspart-1-planning/)  
+4. [Wikipedia – Robot Welding](https://en.wikipedia.org/wiki/Robot_welding)
+
+---
+
+## 📜 License
+
+This repository is licensed under the **MIT License**. You are free to use, modify, and distribute the code with attribution.
+
+---
+
+## 👨‍💻 Maintainers
+
+Maintained by Group 13 – IIT Madras, ME3302 Jan–May 2025  
+For queries: [Contact us via GitHub](https://github.com/YogeshRajasekhar/AutoMan_Welding_Robotic_Arm)
+
+---
+
+> “Robotic welding doesn't just replace labor — it scales precision, reliability, and sustainability.”
+
