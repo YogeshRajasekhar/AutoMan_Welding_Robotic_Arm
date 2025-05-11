@@ -63,5 +63,20 @@ Semester: Jan–May 2025
 
 ---
 
-## 🛠️ Project Architecture
+## 📊 Results
+
+The following figure illustrates the PID-based position control response along the X, Y, and Z axes:
+
+![PID Response](images/automan.jpeg)
+
+*Figure: Desired vs. actual positions over time using PID control.*
+
+### Observations:
+
+- **X Position (Top Plot)**: The response closely follows the desired trajectory with slight oscillations near the peak, indicating a slight underdamped behavior. The system settles well with minimal steady-state error.
+- **Y Position (Middle Plot)**: The trajectory shows a step change near 10 seconds. The controller manages to track the trajectory but with noticeable lag and disturbance sensitivity in the negative phase.
+- **Z Position (Bottom Plot)**: The Z-axis exhibits higher oscillations and slower convergence, suggesting that the PID gains may require further tuning for stability in vertical motion.
+
+Overall, the PID controller provides effective trajectory tracking, with most of the oscillations within acceptable limits for a mobile or robotic platform.
+
 
