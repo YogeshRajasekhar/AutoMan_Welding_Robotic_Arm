@@ -67,7 +67,7 @@ Semester: Jan–May 2025
 
 The following figure illustrates the PID-based position control response along the X, Y, and Z axes:
 
-![PID Response](images/automan.jpeg)
+![PID Response](results/position_error.jpeg)
 
 *Figure: Desired vs. actual positions over time using PID control.*
 
